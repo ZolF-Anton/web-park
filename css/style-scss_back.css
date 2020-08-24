@@ -1,0 +1,424 @@
+/* line 3, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 7, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 10;
+}
+
+/* line 15, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.menu {
+  /* or can use  header nav */
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  /* cause Bootstrap has a margin-bottom: 1rem */
+  list-style-type: none;
+}
+
+/* line 25, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.menu .menu_link {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* line 31, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.menu .menu_item {
+  border-right: 2px dotted black;
+  padding-right: 29px;
+}
+
+/* line 37, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.subheader {
+  position: absolute;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 50px;
+  /* opacity: 0.6; cant use opacity with block, cause all inside thing will be gloomy/shadowed, plz use alpha-channel */
+}
+
+/* line 46, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.subheader .subheader_logo {
+  display: block;
+  margin-top: 16px;
+  max-width: 100%;
+}
+
+/* line 52, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.subheader .subheader_official {
+  display: block;
+  opacity: 0.5;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 300;
+  margin-top: 6px;
+}
+
+/* line 62, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.subheader_call {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 19px;
+  text-align: right;
+}
+
+/* line 70, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.subheader_phone {
+  display: block;
+  margin-top: 8px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 12px;
+}
+
+/* line 81, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.subheader .subheader_btn {
+  margin-top: 19px;
+  width: 172px;
+  height: 46px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 96, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.promo {
+  min-height: 800px;
+  background: url(../bg/bg-1.png) center center/cover no-repeat;
+  padding: 150px 0 135px 0;
+}
+
+/* line 102, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.promo_header {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0px;
+  text-align: center;
+}
+
+/* line 112, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.promo_subheader {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 36px;
+  margin: 0px;
+  margin-top: 22px;
+  text-align: center;
+}
+
+/* line 123, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+p {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 23px;
+}
+
+/* line 133, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.promo_btn {
+  display: block;
+  margin: 118px auto;
+  width: 259px;
+  height: 63px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 149, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.benefit {
+  padding: 71px 0 65px 0;
+}
+
+/* line 152, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.benefit .benefit_h2 {
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 164, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.benefit .reason_8 {
+  margin-bottom: 0;
+  margin-top: 38px;
+  color: #222222;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 174, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.benefit .reason_block {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 35px;
+}
+
+/* line 180, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.benefit .reason_block .round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 113px;
+  height: 113px;
+  background-color: #1eacc7;
+  border-radius: 100%;
+}
+
+/* line 191, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.benefit .reason_block .reasons_descr {
+  width: 343px;
+}
+
+/* .benefit .reason_block .reasons_descr */
+/* line 199, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+h4 {
+  line-height: 21px;
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* line 206, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.mobile_app {
+  max-height: 864;
+  padding: 48px 0 80px 0;
+  background-image: url(../bg/bg-1-pic.png);
+  /* line-height: 1; */
+}
+
+/* .mobile_app */
+/* line 216, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.possibility {
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* .mobile_app */
+/* line 230, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.app_header {
+  font-size: 38px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: #222222;
+  text-transform: uppercase;
+  margin: 0px;
+  margin-top: 28px;
+}
+
+/* .mobile_app */
+/* line 243, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.app_text {
+  font-weight: normal;
+  text-align: center;
+  color: #222222;
+  margin-top: -5px;
+}
+
+/* line 250, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.mobile_app .row {
+  margin-top: 32px;
+}
+
+/* line 253, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.mobile_app .row .cont_col_1 {
+  width: 320px;
+  height: 280px;
+  opacity: 0.9;
+  background-image: url(../img/block/pic1.png);
+  border: olivedrab dotted;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 265, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.mobile_app .row .cont_col_2 {
+  width: 320px;
+  height: 280px;
+  opacity: 0.9;
+  background-image: url(../img/block/pic2.png);
+  border: olivedrab dotted;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 277, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.mobile_app .row .cont_col_3 {
+  width: 320px;
+  height: 280px;
+  opacity: 0.9;
+  background-image: url(../img/block/pic3.png);
+  border: olivedrab dotted;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 289, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.mobile_app .row .cont_col_4 {
+  width: 320px;
+  height: 280px;
+  opacity: 0.9;
+  background-image: url(../img/block/pic4.png);
+  border: olivedrab dotted;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 301, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.mobile_app .row .cont_col_5 {
+  width: 320px;
+  height: 280px;
+  opacity: 0.9;
+  background-image: url(../img/block/pic5.png);
+  border: olivedrab dotted;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 313, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.mobile_app .row .cont_col_6 {
+  width: 320px;
+  height: 280px;
+  opacity: 0.9;
+  background-image: url(../img/block/pic6.png);
+  border: olivedrab dotted;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 325, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.mobile_app .row .cont_col_title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 92px;
+}
+
+/* line 334, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.mobile_app .row .cont_col_icon {
+  margin-bottom: 35px;
+}
+
+/* line 339, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.w_color {
+  color: white;
+}
+
+/* line 343, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.u_car {
+  position: relative;
+  min-height: 895px;
+  padding: 56px 0 138px 0;
+  background-color: teal;
+}
+
+/* line 349, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.u_car .container .car_img {
+  position: relative;
+  display: block;
+  margin: 56px auto 0 auto;
+  z-index: 2;
+}
+
+/* line 357, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.choice_descr {
+  text-align: center;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* *************************************************** */
+/* line 368, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.sample2 .sea {
+  height: 998px;
+  width: 100%;
+  position: relative;
+  background-image: url("../bg/blak_line.png"), url("../bg/bg-1-pic.png");
+  background-position: top left, bottom left;
+  background-repeat: repeat-x, repeat;
+}
+
+/* line 377, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.sample2 .fish {
+  background: url("../img/uber-car.png") no-repeat;
+  height: 46%;
+  width: 100%;
+  left: 28%;
+  right: auto;
+  top: 231px;
+  position: absolute;
+}
+
+/* line 387, E:/!XLAM/!frontEND/!_lessons/Projects/Second_UBER/src/scss/style-scss.scss */
+.t5 {
+  background-color: #ffffff;
+  background-color: black;
+}
+
+/*# sourceMappingURL=style-scss.css.map */
