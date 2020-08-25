@@ -322,6 +322,14 @@ h4 {
   color: white;
 }
 
+.choice_descr {
+  text-align: center;
+  color: #222222;
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
 .u_car {
   position: relative;
   min-height: 895px;
@@ -336,14 +344,6 @@ h4 {
   z-index: 2;
 }
 
-.choice_descr {
-  text-align: center;
-  color: #222222;
-  font-size: 17px;
-  font-weight: 300;
-  line-height: 24px;
-}
-
 /* *************************************************** */
 .sample2 .sea {
   height: 998px;
@@ -352,6 +352,13 @@ h4 {
   background-image: url("../bg/blak_line.png"), url("../bg/bg-1-pic.png");
   background-position: top left, bottom left;
   background-repeat: repeat-x, repeat;
+}
+
+.sample2 .sea .choice_descr_bot {
+  color: #0d2930;
+  font-size: 26px;
+  position: absolute;
+  margin: 700px;
 }
 
 .sample2 .fish {
