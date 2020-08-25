@@ -1,4 +1,17 @@
 $wcolor: #ffffff;
+@mixin hover_teal {
+    &:hover {
+        transition: 0.5s all;
+        background-color: teal;
+        color: ghostwhite;
+    }
+}
+@mixin act_1 {
+    &:active {
+        transition: 3s all;
+        background-color: rgb(0, 77, 77);
+    }
+}
 
 * {
     font-family: "Roboto", sans-serif;
@@ -144,6 +157,7 @@ p {
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
+    @include hover_teal();
 }
 
 .benefit {
@@ -356,6 +370,42 @@ h4 {
             background-color: rgb(66, 50, 110);
             max-width: 50px;
             min-height: 50px;
+        }
+    }
+}
+
+.test_pseudo {
+    box-sizing: border-box;
+    button {
+        width: 250px;
+        height: 50px;
+        background-color: #ffe66b;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s all;
+        @include hover_teal();
+        @include act_1();
+    }
+
+    .rounds {
+        .circle {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            border-radius: 100%;
+            margin-top: 10px;
+
+            &:nth-child(2n) {
+                background-color: red;
+            }
+            &:nth-child(odd) {
+                background-color: navy;
+            }
+
+            &:nth-child(1) {
+                background-color: burlywood;
+            }
+            @include act_1();
         }
     }
 }

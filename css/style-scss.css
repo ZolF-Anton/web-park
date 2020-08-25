@@ -150,6 +150,13 @@ p {
   text-transform: uppercase;
 }
 
+.promo_btn:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  background-color: teal;
+  color: ghostwhite;
+}
+
 .benefit {
   padding: 71px 0 65px 0;
 }
@@ -384,5 +391,59 @@ h4 {
   background-color: #42326e;
   max-width: 50px;
   min-height: 50px;
+}
+
+.test_pseudo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.test_pseudo button {
+  width: 250px;
+  height: 50px;
+  background-color: #ffe66b;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.test_pseudo button:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  background-color: teal;
+  color: ghostwhite;
+}
+
+.test_pseudo button:active {
+  -webkit-transition: 3s all;
+  transition: 3s all;
+  background-color: #004d4d;
+}
+
+.test_pseudo .rounds .circle {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border-radius: 100%;
+  margin-top: 10px;
+}
+
+.test_pseudo .rounds .circle:nth-child(2n) {
+  background-color: red;
+}
+
+.test_pseudo .rounds .circle:nth-child(odd) {
+  background-color: navy;
+}
+
+.test_pseudo .rounds .circle:nth-child(1) {
+  background-color: burlywood;
+}
+
+.test_pseudo .rounds .circle:active {
+  -webkit-transition: 3s all;
+  transition: 3s all;
+  background-color: #004d4d;
 }
 /*# sourceMappingURL=style-scss.css.map */
