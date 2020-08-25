@@ -1,5 +1,5 @@
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -445,5 +445,12 @@ h4 {
   -webkit-transition: 3s all;
   transition: 3s all;
   background-color: #004d4d;
+}
+
+.test_pseudo .rounds .circle:before {
+  content: '';
+  display: block;
+  height: 15px;
+  background-color: #940707;
 }
 /*# sourceMappingURL=style-scss.css.map */

@@ -14,7 +14,7 @@ $wcolor: #ffffff;
 }
 
 * {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -337,7 +337,7 @@ h4 {
         height: 998px;
         width: 100%;
         position: relative;
-        background-image: url("../bg/blak_line.png"), url("../bg/bg-1-pic.png");
+        background-image: url('../bg/blak_line.png'), url('../bg/bg-1-pic.png');
         background-position: top left, bottom left;
         background-repeat: repeat-x, repeat;
         .choice_descr_bot {
@@ -349,7 +349,7 @@ h4 {
     }
 
     .fish {
-        background: url("../img/uber-car.png") no-repeat;
+        background: url('../img/uber-car.png') no-repeat;
         height: 46%;
         min-width: 60%;
         left: 28%;
@@ -406,6 +406,12 @@ h4 {
                 background-color: burlywood;
             }
             @include act_1();
+            &:before {
+                content: '';
+                display: block;
+                height: 15px;
+                background-color: rgb(148, 7, 7);
+            }
         }
     }
 }
