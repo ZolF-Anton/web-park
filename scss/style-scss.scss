@@ -1,7 +1,7 @@
 $wcolor: #ffffff;
 @mixin hover_teal {
     &:hover {
-        transition: 0.5s all;
+        transition: 0.9s all;
         background-color: teal;
         color: ghostwhite;
     }
@@ -394,10 +394,30 @@ h4 {
             background-color: green;
             border-radius: 100%;
             margin-top: 10px;
-
+            transition: 1s all;
             &:nth-child(2n) {
+                transition: 2s;
                 background-color: red;
+                &:before {
+                    content: '';
+                    display: block;
+                    height: 20px;
+                    width: 10%;
+                    background-color: #000;
+                    transition: 1.2s all;
+                }
+                &:hover {
+                    &:before {
+                        content: '';
+                        display: block;
+                        height: 2px;
+                        width: 101%;
+                        background-color: #000;
+                        transition: 1.2s all;
+                    }
+                }
             }
+
             &:nth-child(odd) {
                 background-color: navy;
             }
