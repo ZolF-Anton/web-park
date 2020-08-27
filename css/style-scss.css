@@ -441,13 +441,7 @@ h4 {
   background-color: burlywood;
 }
 
-.test_pseudo .rounds .circle:active {
-  -webkit-transition: 3s all;
-  transition: 3s all;
-  background-color: #004d4d;
-}
-
-.test_pseudo .rounds .circle:before {
+.test_pseudo .rounds .circle:hover:before {
   content: '';
   display: block;
   height: 15px;

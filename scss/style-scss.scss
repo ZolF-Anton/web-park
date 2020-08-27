@@ -405,12 +405,13 @@ h4 {
             &:nth-child(1) {
                 background-color: burlywood;
             }
-            @include act_1();
-            &:before {
-                content: '';
-                display: block;
-                height: 15px;
-                background-color: rgb(148, 7, 7);
+            &:hover {
+                &:before {
+                    content: '';
+                    display: block;
+                    height: 15px;
+                    background-color: rgb(148, 7, 7);
+                }
             }
         }
     }
