@@ -4,17 +4,46 @@ $second-color: #ff5656;
 @mixin hover_teal {
     &:hover {
         transition: 0.9s all;
+        background-color: $main-color;
+        background-image: none;
         background-color: teal;
-        color: ghostwhite;
     }
 }
 @mixin act_1 {
     &:active {
         transition: 3s all;
+        background-color: $main-color;
+        background-image: none;
         background-color: rgb(0, 77, 77);
     }
 }
-
+@mixin btn_hover {
+    &:hover {
+        background-image: none;
+        background-color: $main-color;
+    }
+}
+@mixin p_before {
+    &:before {
+        content: '';
+        display: block;
+        width: 14px;
+        height: 2px;
+        background-color: $main-color;
+    }
+}
+@mixin p_after {
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 2px;
+        height: 14px;
+        background-color: $main-color;
+    }
+}
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -82,6 +111,7 @@ nav {
         font-size: 14px;
         font-weight: 400;
         text-transform: uppercase;
+        @include btn_hover();
     }
 }
 
@@ -293,6 +323,27 @@ h4 {
         }
         &_icon {
             margin-bottom: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 35px;
+            left: 47%;
+            transform: translateX(-50%);
+            width: 26px;
+            height: 26px;
+            background-color: #000000;
+            margin: 0 auto;
+            border-radius: 100%;
+            cursor: pointer;
+            @include p_before;
+            @include p_after;
+            &:hover {
+                &:before,
+                &:after {
+                    background-color: $second-color;
+                }
+            }
         }
     }
 }

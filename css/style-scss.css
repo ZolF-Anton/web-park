@@ -73,6 +73,11 @@ nav {
   text-transform: uppercase;
 }
 
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
 .subheader_call {
   color: #ffffff;
   font-size: 12px;
@@ -150,8 +155,9 @@ nav {
 .promo_btn:hover {
   -webkit-transition: 0.9s all;
   transition: 0.9s all;
+  background-color: #1eacc7;
+  background-image: none;
   background-color: teal;
-  color: ghostwhite;
 }
 
 .benefit {
@@ -318,6 +324,50 @@ h4 {
 
 .mobile_app .row .cont_col_icon {
   margin-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 47%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.mobile_app .row .cont_col_icon:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+}
+
+.mobile_app .row .cont_col_icon::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  width: 2px;
+  height: 14px;
+  background-color: #1eacc7;
+}
+
+.mobile_app .row .cont_col_icon:hover:before, .mobile_app .row .cont_col_icon:hover:after {
+  background-color: #ff5656;
 }
 
 .w_color {
