@@ -367,6 +367,8 @@ h4 {
 }
 
 .mobile_app .row .cont_col_icon:hover:before, .mobile_app .row .cont_col_icon:hover:after {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   background-color: #ff5656;
 }
 

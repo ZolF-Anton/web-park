@@ -341,6 +341,7 @@ h4 {
             &:hover {
                 &:before,
                 &:after {
+                    transition: 0.7s;
                     background-color: $second-color;
                 }
             }
