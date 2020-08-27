@@ -1,4 +1,6 @@
 $wcolor: #ffffff;
+$main-color: #1eacc7;
+$second-color: #ff5656;
 @mixin hover_teal {
     &:hover {
         transition: 0.9s all;
@@ -35,13 +37,10 @@ nav {
     /* cause Bootstrap has a margin-bottom: 1rem */
     list-style-type: none;
 
-    .menu_link {
+    &_link {
         color: $wcolor;
         font-size: 15px;
         font-weight: 300;
-    }
-
-    .menu_item {
         border-right: 2px dotted black;
         padding-right: 29px;
     }
@@ -56,19 +55,33 @@ nav {
 
     /* opacity: 0.6; cant use opacity with block, cause all inside thing will be gloomy/shadowed, plz use alpha-channel */
 
-    .subheader_logo {
+    &_logo {
         display: block;
         margin-top: 16px;
         max-width: 100%;
     }
 
-    .subheader_official {
+    &_official {
         display: block;
         opacity: 0.5;
         color: $wcolor;
         font-size: 13px;
         font-weight: 300;
         margin-top: 6px;
+    }
+    &_btn {
+        margin-top: 19px;
+        width: 172px;
+        height: 46px;
+        box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+        border: none;
+        border-radius: 4px;
+        background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+        color: $wcolor;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
     }
 }
 
@@ -91,79 +104,62 @@ nav {
     line-height: 12px;
 }
 
-.subheader .subheader_btn {
-    margin-top: 19px;
-    width: 172px;
-    height: 46px;
-    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
-    border: none;
-    border-radius: 4px;
-    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
-    color: $wcolor;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
+//.subheader
 
 .promo {
     min-height: 800px;
     background: url(../bg/bg-1.png) center (center / cover) no-repeat;
     padding: 150px 0 135px 0;
-}
-
-.promo_header {
-    color: $wcolor;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 60px;
-    line-height: 60px;
-    margin: 0px;
-    text-align: center;
-}
-
-.promo_subheader {
-    color: $wcolor;
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 36px;
-    margin: 0px;
-    margin-top: 22px;
-    text-align: center;
-}
-
-p {
-    color: $wcolor;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
-    margin-top: 23px;
-}
-
-.promo_btn {
-    display: block;
-    margin: 118px auto;
-    width: 259px;
-    height: 63px;
-    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
-    border: none;
-    border-radius: 4px;
-    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
-    color: $wcolor;
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    @include hover_teal();
+    &_header {
+        color: $wcolor;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 60px;
+        line-height: 60px;
+        margin: 0px;
+        text-align: center;
+    }
+    &_subheader {
+        color: $wcolor;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 36px;
+        margin: 0px;
+        margin-top: 22px;
+        text-align: center;
+    }
+    & p {
+        color: $wcolor;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 23px;
+    }
+    &_btn {
+        display: block;
+        margin: 118px auto;
+        width: 259px;
+        height: 63px;
+        box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+        border: none;
+        border-radius: 4px;
+        background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+        color: $wcolor;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        @include hover_teal();
+    }
 }
 
 .benefit {
     padding: 71px 0 65px 0;
 
-    .benefit_h2 {
+    &_h2 {
         margin: 0 auto;
         height: 24px;
         width: 112px;
@@ -225,8 +221,6 @@ h4 {
     /* line-height: 1; */
 }
 
-/* .mobile_app */
-
 .possibility {
     margin: 0 auto;
     height: 24px;
@@ -238,8 +232,6 @@ h4 {
     font-weight: 300;
     text-transform: uppercase;
 }
-
-/* .mobile_app */
 
 .app_header {
     font-size: 38px;
@@ -356,83 +348,5 @@ h4 {
         right: auto;
         top: 231px;
         position: absolute;
-    }
-}
-.cons_reqs {
-    .border_test {
-        background-color: darkgreen;
-        max-width: 200px;
-        min-height: 200px;
-        border-radius: 39%;
-        margin-left: 150px;
-        &_plus {
-            margin: 11px auto;
-            background-color: rgb(66, 50, 110);
-            max-width: 50px;
-            min-height: 50px;
-        }
-    }
-}
-
-.test_pseudo {
-    box-sizing: border-box;
-    button {
-        width: 250px;
-        height: 50px;
-        background-color: #ffe66b;
-        border: none;
-        cursor: pointer;
-        transition: 0.5s all;
-        @include hover_teal();
-        @include act_1();
-    }
-
-    .rounds {
-        .circle {
-            width: 50px;
-            height: 50px;
-            background-color: green;
-            border-radius: 100%;
-            margin-top: 10px;
-            transition: 1s all;
-            &:nth-child(2n) {
-                transition: 2s;
-                background-color: red;
-                &:before {
-                    content: '';
-                    display: block;
-                    height: 20px;
-                    width: 10%;
-                    background-color: #000;
-                    transition: 1.2s all;
-                }
-                &:hover {
-                    &:before {
-                        content: '';
-                        display: block;
-                        height: 2px;
-                        width: 101%;
-                        background-color: #000;
-                        transition: 1.2s all;
-                    }
-                }
-            }
-
-            &:nth-child(odd) {
-                background-color: navy;
-            }
-
-            &:nth-child(1) {
-                background-color: burlywood;
-            }
-            &:hover {
-                &:before {
-                    content: '';
-                    display: block;
-                    height: 15px;
-                    background-color: rgb(148, 7, 7);
-                }
-            }
-        }
     }
 }
