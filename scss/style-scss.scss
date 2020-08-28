@@ -466,12 +466,14 @@ h4 {
     &_descr {
         text-align: center;
         margin-top: 486px;
-        font-family: Roboto;
         font-size: 15px;
-
         font-weight: 400;
         text-transform: uppercase;
         color: #1fbad6;
+        & a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
     }
 }
 
@@ -487,6 +489,9 @@ h4 {
 footer {
     min-height: 156px;
     padding: 14px 0;
+    & a:hover {
+        text-decoration: none;
+    }
 }
 
 .footer {
@@ -497,6 +502,37 @@ footer {
         margin: 0 auto;
     }
     &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
         padding-top: 22px;
+        &_links {
+            width: 290px;
+            &_main {
+                font-size: 14px;
+            }
+            &_sub {
+                a {
+                    margin: 0 7px;
+                }
+            }
+            &_lang {
+                margin-top: 10px;
+            }
+        }
+    }
+    &_wrapper > div {
+        margin-bottom: 20px;
+        width: 33%;
+        &:nth-child(1) {
+            order: 2;
+        }
+
+        &:nth-child(2) {
+            order: 1;
+        }
+        &:nth-child(3) {
+            order: 3;
+        }
     }
 }

@@ -491,11 +491,15 @@ h4 {
 .cities_descr {
   text-align: center;
   margin-top: 486px;
-  font-family: Roboto;
   font-size: 15px;
   font-weight: 400;
   text-transform: uppercase;
   color: #1fbad6;
+}
+
+.cities_descr a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 .w_box {
@@ -514,6 +518,10 @@ footer {
   padding: 14px 0;
 }
 
+footer a:hover {
+  text-decoration: none;
+}
+
 .footer_divider {
   width: 299px;
   height: 4px;
@@ -522,6 +530,54 @@ footer {
 }
 
 .footer_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-top: 22px;
+}
+
+.footer_wrapper_links {
+  width: 290px;
+}
+
+.footer_wrapper_links_main {
+  font-size: 14px;
+}
+
+.footer_wrapper_links_sub a {
+  margin: 0 7px;
+}
+
+.footer_wrapper_links_lang {
+  margin-top: 10px;
+}
+
+.footer_wrapper > div {
+  margin-bottom: 20px;
+  width: 33%;
+}
+
+.footer_wrapper > div:nth-child(1) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.footer_wrapper > div:nth-child(2) {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.footer_wrapper > div:nth-child(3) {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 /*# sourceMappingURL=style-scss.css.map */
