@@ -372,10 +372,6 @@ h4 {
   background-color: #ff5656;
 }
 
-.w_color {
-  color: white;
-}
-
 .choice_descr {
   text-align: center;
   color: #222222;
@@ -427,5 +423,105 @@ h4 {
 
 .cons_reqs {
   padding: 68px 0 84px 0;
+}
+
+.cons_reqs_block {
+  margin: 33px 0;
+}
+
+.cons_reqs_block_no_m_bot {
+  margin-bottom: 0px;
+}
+
+.cons_reqs_title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #1ca8c3;
+}
+
+.cons_reqs_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+
+.cons_reqs li {
+  position: relative;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+.cons_reqs li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 21px;
+  height: 20px;
+  background: url(../icon/checkbb.png) center center/cover no-repeat;
+}
+
+.cons_reqs_description {
+  margin-top: 25px;
+  font-size: 17px;
+  font-weight: 300;
+  color: #1ca8c3;
+}
+
+.cons_reqs .warning .cons_reqs_title {
+  color: #ff5656;
+}
+
+.cons_reqs .warning .cons_reqs_list li:before {
+  content: '';
+  background: url(../icon/checkbr.png) center center/cover no-repeat;
+}
+
+.cities {
+  min-height: 717px;
+  background-color: #080816;
+  background: url(../bg/bg-2.png) center center/cover no-repeat;
+  padding: 49px 0;
+}
+
+.cities_descr {
+  text-align: center;
+  margin-top: 486px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #1fbad6;
+}
+
+.w_box {
+  width: 68px;
+  height: 24px;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.w_color {
+  color: #ffffff;
+}
+
+footer {
+  min-height: 156px;
+  padding: 14px 0;
+}
+
+.footer_divider {
+  width: 299px;
+  height: 4px;
+  background-color: #1fbad6;
+  margin: 0 auto;
+}
+
+.footer_wrapper {
+  padding-top: 22px;
 }
 /*# sourceMappingURL=style-scss.css.map */
