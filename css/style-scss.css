@@ -32,6 +32,10 @@ nav {
   padding-right: 29px;
 }
 
+.menu_link:last-child {
+  border-right: none;
+}
+
 .subheader {
   position: absolute;
   width: 100%;
@@ -672,5 +676,12 @@ footer a:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media (max-width: 1200px) {
+  .menu_link {
+    padding-right: 21px;
+    font-size: 13px;
+  }
 }
 /*# sourceMappingURL=style-scss.css.map */
