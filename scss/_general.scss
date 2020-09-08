@@ -99,7 +99,9 @@ nav {
         text-transform: uppercase;
         font-size: 60px;
         line-height: 60px;
+        padding-top: 50px;
         margin: 0px;
+
         text-align: center;
     }
     &_subheader {
@@ -164,7 +166,7 @@ nav {
         text-align: center;
     }
 
-    .reason_block {
+    .reasons {
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -181,13 +183,13 @@ nav {
             border-radius: 100%;
         }
 
-        .reasons_descr {
+        &_descr {
             width: 343px;
         }
     }
 }
 
-/* .benefit .reason_block .reasons_descr */
+/* .benefit .reasons .reasons_descr */
 
 h4 {
     line-height: 21px;

@@ -113,6 +113,7 @@ nav {
   text-transform: uppercase;
   font-size: 60px;
   line-height: 60px;
+  padding-top: 50px;
   margin: 0px;
   text-align: center;
 }
@@ -190,7 +191,7 @@ nav {
   text-align: center;
 }
 
-.benefit .reason_block {
+.benefit .reasons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +204,7 @@ nav {
   margin-top: 35px;
 }
 
-.benefit .reason_block .round {
+.benefit .reasons .round {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,11 +221,11 @@ nav {
   border-radius: 100%;
 }
 
-.benefit .reason_block .reasons_descr {
+.benefit .reasons_descr {
   width: 343px;
 }
 
-/* .benefit .reason_block .reasons_descr */
+/* .benefit .reasons .reasons_descr */
 h4 {
   line-height: 21px;
   color: #1eacc7;
@@ -682,6 +683,129 @@ footer a:hover {
   .menu_link {
     padding-right: 21px;
     font-size: 13px;
+  }
+  .promo_header {
+    font-size: 50px;
+  }
+  .benefit .reasons .reasons_descr {
+    width: 305px;
+  }
+  .mobile_app .row .cont_col {
+    width: 300px;
+    height: 275px;
+  }
+  .sample2 .sea {
+    height: 998px;
+    width: 100%;
+    position: relative;
+    background-image: url("../bg/blak_line.png"), url("../bg/bg-1-pic.png");
+    background-position: top left, bottom left;
+    background-repeat: repeat-x, repeat;
+  }
+  .sample2 .sea .choice_descr_bot {
+    margin: 700px 268px;
+  }
+  .sample2 .fish {
+    background: url("../img/uber-car.png") no-repeat;
+    height: 46%;
+    min-width: 77%;
+    left: 11%;
+    right: auto;
+    top: 231px;
+    position: absolute;
+  }
+  .footer_wrapper_mobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 109px;
+  }
+  .footer_wrapper_mobile a {
+    margin: 3px 11px;
+  }
+  .footer_wrapper_links_sub {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer_wrapper_links_sub a {
+    margin: 0 7px;
+    color: #999999;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .footer_wrapper_links_main {
+    padding: 0 5px;
+  }
+  .footer_wrapper_links_main a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu_link {
+    padding-right: 11px;
+    font-size: 12px;
+  }
+  .subheader_btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 21px;
+  }
+  .subheader_phone {
+    font-size: 19px;
+  }
+  .subheader_logo img {
+    max-width: 90%;
+  }
+  .subheader_logo .subheader_official {
+    font-size: 12px;
+  }
+  .promo_header {
+    font-size: 39px;
+  }
+  .promo_subheader {
+    font-size: 26px;
+  }
+  .car_img {
+    width: 100%;
+  }
+  .benefit .reasons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .benefit .reasons .round {
+    margin-bottom: 26px;
+  }
+  .benefit .reasons .reasons_descr {
+    width: 305px;
+  }
+  .mobile_app .row .cont_col {
+    width: 218px;
+    height: 270px;
+  }
+  .mobile_app .row .cont_col_title {
+    font-size: 19px;
+    margin-top: 65px;
+  }
+  .mobile_app .row .cont_col_icon {
+    left: 53%;
   }
 }
 /*# sourceMappingURL=style-scss.css.map */
