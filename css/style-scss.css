@@ -10,6 +10,10 @@ nav {
   z-index: 10;
 }
 
+.xl-hidden {
+  display: none;
+}
+
 .menu {
   /* or can use  header nav */
   display: -webkit-box;
@@ -887,10 +891,10 @@ footer a:hover {
     position: absolute;
     right: 10px;
     top: 50%;
-    -webkit-transform: translateY(-68%);
-            transform: translateY(-68%);
+    -webkit-transform: translateY(-42%);
+            transform: translateY(-42%);
     width: 40px;
-    height: 20px;
+    height: 30px;
   }
   .burger span {
     display: block;
@@ -901,6 +905,10 @@ footer a:hover {
     border-radius: 11%;
     -webkit-transition: 750ms all;
     transition: 750ms all;
+  }
+  .burger_active {
+    -webkit-transform: translateY(-11%);
+            transform: translateY(-11%);
   }
   .burger_active span {
     margin-bottom: -5px;
@@ -985,6 +993,34 @@ footer a:hover {
         -ms-flex-order: 3;
             order: 3;
     width: 30%;
+  }
+  .subheader_phone {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .subheader_btn {
+    display: block;
+    margin: 12px auto;
+    width: 180px;
+    height: 38px;
+  }
+  .promo_header {
+    font-size: 35px;
+    line-height: 38px;
+  }
+  .promo_subheader {
+    font-size: 22px;
+  }
+  .xs-hidden {
+    display: none;
+  }
+  .xl-hidden {
+    display: block;
   }
 }
 /*# sourceMappingURL=style-scss.css.map */

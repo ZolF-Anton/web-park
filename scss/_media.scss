@@ -225,9 +225,9 @@
         position: absolute;
         right: 10px;
         top: 50%;
-        transform: translateY(-68%);
+        transform: translateY(-42%);
         width: 40px;
-        height: 20px;
+        height: 30px;
         span {
             display: block;
             height: 6px;
@@ -238,6 +238,7 @@
             transition: 750ms all;
         }
         &_active {
+            transform: translateY(-11%);
             span {
                 margin-bottom: -5px;
                 &:nth-child(1) {
@@ -321,5 +322,40 @@
                 }
             }
         }
+    }
+
+    .subheader {
+        &_phone {
+            display: block;
+            margin-top: 10px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &_btn {
+            display: block;
+            margin: 12px auto;
+            width: 180px;
+            height: 38px;
+        }
+    }
+
+    .promo {
+        &_header {
+            font-size: 35px;
+            line-height: 38px;
+        }
+        &_subheader {
+            font-size: 22px;
+        }
+    }
+
+    .xs-hidden {
+        display: none;
+    }
+    .xl-hidden {
+        display: block;
     }
 }
