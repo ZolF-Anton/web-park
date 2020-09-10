@@ -251,10 +251,11 @@ h4 {
         width: 320px;
         height: 280px;
         opacity: 0.9;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        position: relative;
+        //display: flex;
+        // flex-direction: column;
+        //justify-content: space-between;
+        //align-items: center;
 
         &_1 {
             background-image: url(../img/block/pic1.png);
