@@ -6,10 +6,6 @@ nav {
     z-index: 10;
 }
 
-.xl-hidden {
-    display: none;
-}
-
 .menu {
     /* or can use  header nav */
     display: flex;
@@ -41,6 +37,9 @@ nav {
     height: 84px;
     background-color: rgba(0, 0, 0, 0.6);
     top: 50px;
+    .xl-hidden {
+        display: none;
+    }
 
     /* opacity: 0.6; cant use opacity with block, cause all inside thing will be gloomy/shadowed, plz use alpha-channel */
 
@@ -481,13 +480,13 @@ footer {
                 display: flex;
                 justify-content: center;
                 padding: 0 20px;
+                margin: 0 10px;
+                color: #070716;
+                font-weight: 300;
+                text-transform: uppercase;
 
                 a {
                     margin: 0 10px;
-                    color: #070716;
-                    font-size: 15px;
-                    font-weight: 300;
-                    text-transform: uppercase;
                 }
             }
             &_sub {
