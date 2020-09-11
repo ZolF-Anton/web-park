@@ -390,12 +390,12 @@
 @media (max-width: 575px) {
     .menu {
         position: fixed;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        //flex-direction: column;
+        //justify-content: center;
+        //align-items: flex-start;
         top: 0;
         left: -100%;
-        width: 50%;
+        width: 75%;
         height: 100vh;
         padding: 20px 15px;
         background-color: rgba(2, 2, 3, 0.8);
@@ -404,12 +404,15 @@
             left: 0;
         }
         &_item {
-            padding-right: 0;
+            width: 100%;
+            text-align: center;
+            padding: 5px;
             border: none;
             margin: 10px 0;
         }
         &_link {
             font-size: 20px;
+            display: block;
         }
     }
     .burger {
