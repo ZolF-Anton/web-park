@@ -71,11 +71,10 @@
                 padding-left: 109px;
                 a {
                     margin: 3px 11px;
+                    margin-bottom: 5px;
                 }
             }
-            #f_w_links {
-                width: 45%;
-            }
+
             &_links {
                 &_sub {
                     display: flex;
@@ -149,7 +148,7 @@
             }
 
             &_descr {
-                width: 305px;
+                width: 75%;
             }
         }
     }
@@ -157,7 +156,7 @@
     .mobile_app {
         .row {
             .cont_col {
-                width: 218px;
+                width: 300px;
                 height: 270px;
                 &_title {
                     font-size: 19px;
@@ -333,6 +332,13 @@
         }
         &_subheader {
             font-size: 22px;
+        }
+    }
+    .benefit {
+        .reasons {
+            &_descr {
+                text-align: center;
+            }
         }
     }
 

@@ -288,6 +288,7 @@ h4 {
   height: 280px;
   opacity: 0.9;
   position: relative;
+  margin: 0 auto;
 }
 
 .mobile_app .row .cont_col_1 {
@@ -737,9 +738,7 @@ footer a:hover {
   }
   .footer_wrapper_mobile a {
     margin: 3px 11px;
-  }
-  .footer_wrapper #f_w_links {
-    width: 45%;
+    margin-bottom: 5px;
   }
   .footer_wrapper_links_sub {
     display: -webkit-box;
@@ -809,10 +808,10 @@ footer a:hover {
     margin-right: 0px;
   }
   .benefit .reasons_descr {
-    width: 305px;
+    width: 75%;
   }
   .mobile_app .row .cont_col {
-    width: 218px;
+    width: 300px;
     height: 270px;
   }
   .mobile_app .row .cont_col_title {
@@ -984,6 +983,9 @@ footer a:hover {
   }
   .promo_subheader {
     font-size: 22px;
+  }
+  .benefit .reasons_descr {
+    text-align: center;
   }
   .footer_wrapper_social {
     -webkit-box-orient: vertical;
