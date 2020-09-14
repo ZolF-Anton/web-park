@@ -1,0 +1,43 @@
+@mixin hover_teal {
+    &:hover {
+        transition: 0.9s all;
+        background-color: $main-color;
+        background-image: none;
+        background-color: teal;
+    }
+}
+@mixin act_1 {
+    &:active {
+        transition: 3s all;
+        background-color: $main-color;
+        background-image: none;
+        background-color: rgb(0, 77, 77);
+    }
+}
+@mixin btn_hover {
+    &:hover {
+        background-image: none;
+        background-color: $main-color;
+    }
+}
+@mixin p_before {
+    &:before {
+        content: '';
+        display: block;
+        width: 14px;
+        height: 2px;
+        background-color: $main-color;
+    }
+}
+@mixin p_after {
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 2px;
+        height: 14px;
+        background-color: $main-color;
+    }
+}

@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>UBER</title>
+        <link rel="icon" href="icon/favicon/favicon.ico" type="image/x-icon" />
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
             rel="stylesheet"
@@ -19,30 +20,35 @@
                 <div class="container">
                     <ul class="menu">
                         <li class="menu_item">
-                            <a href="#" class="menu_link">Главная</a>
+                            <a href="#main" class="menu_link">Главная</a>
                         </li>
                         <li class="menu_item">
-                            <a href="#" class="menu_link">Со своим авто</a>
+                            <a href="#benefit" class="menu_link">Преимущества</a>
                         </li>
                         <li class="menu_item">
-                            <a href="#" class="menu_link">На авто компании</a>
+                            <a href="#auto_uber" class="menu_link">Авто</a>
                         </li>
                         <li class="menu_item">
-                            <a href="#" class="menu_link">Требования</a>
+                            <a href="#reqs" class="menu_link">Требования</a>
                         </li>
                         <li class="menu_item">
-                            <a href="#" class="menu_link">Контакты</a>
+                            <a href="#cities" class="menu_link">Оставить заявку</a>
                         </li>
                         <li class="menu_item">
-                            <a href="#" class="menu_link">Оставить заявку</a>
+                            <a href="#footer" class="menu_link">Контакты</a>
                         </li>
                     </ul>
+                </div>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </nav>
             <div class="subheader">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 offset-md-1">
+                        <div class="col-6 col-md-4 offset-md-1">
                             <a href="#" class="subheader_logo">
                                 <img src="img/logo.png" alt="Logo UBER" />
                                 <div class="subheader_official">
@@ -50,21 +56,24 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-2 offset-md-2">
+                        <div class="xs-hidden col-6 col-md-3 offset-md-1 col-xl-2 offset-xl-2">
                             <div class="subheader_call">Звоните нам ежедневно</div>
-                            <a href="tel:+74957970988" class="subheader_phone">8 495 797 09 88</a>
+                            <a href="tel:+74958000000" class="subheader_phone">8 495 800 00 00</a>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-6 col-md-3 col-lg-2">
+                            <a href="tel:+74958000000" class="subheader_phone xl-hidden"
+                                >8 495 800 00 00</a
+                            >
                             <button class="subheader_btn">заказать звонок</button>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <section class="promo">
+        <section class="promo" id="main">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 offset-md-1">
+                    <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
                         <h1 class="promo_header">КОМПАНИЯ UBER PARTNERS!</h1>
                         <h2 class="promo_subheader">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
                         <p>
@@ -83,13 +92,13 @@
                 </div>
             </div>
         </section>
-        <section class="benefit">
+        <section class="benefit" id="benefit">
             <div class="container">
                 <div class="benefit_h2">преимущества</div>
                 <h3 class="reason_8">8 причин начать работать с нами</h3>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="reason_block">
+                        <div class="reasons">
                             <div class="round">
                                 <img src="icon/block/wallet.png" alt="icon" />
                             </div>
@@ -105,7 +114,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="reason_block">
+                        <div class="reasons">
                             <div class="round">
                                 <img src="icon/block/money.png" alt="icon" />
                             </div>
@@ -121,7 +130,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="reason_block">
+                        <div class="reasons">
                             <div class="round">
                                 <img src="icon/block/key.png" alt="icon" />
                             </div>
@@ -137,7 +146,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="reason_block">
+                        <div class="reasons">
                             <div class="round">
                                 <img src="icon/block/phone.png" alt="icon" />
                             </div>
@@ -152,7 +161,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="reason_block">
+                        <div class="reasons">
                             <div class="round">
                                 <img src="icon/block/graf.png" alt="icon" />
                             </div>
@@ -167,7 +176,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="reason_block">
+                        <div class="reasons">
                             <div class="round">
                                 <img src="icon/block/calendar.png" alt="icon" />
                             </div>
@@ -183,7 +192,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="reason_block">
+                        <div class="reasons">
                             <div class="round">
                                 <img src="icon/block/gps.png" alt="icon" />
                             </div>
@@ -199,7 +208,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="reason_block">
+                        <div class="reasons">
                             <div class="round">
                                 <img src="icon/block/car.png" alt="icon" />
                             </div>
@@ -225,41 +234,39 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="cont_col cont_col_1">
                             <div class="cont_col_title">оформление заказа одним касанием</div>
                             <div class="cont_col_icon"></div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="cont_col cont_col_2">
                             <div class="cont_col_title">надежная подача</div>
                             <div class="cont_col_icon"></div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="cont_col cont_col_3">
                             <div class="cont_col_title">прозрачные цены</div>
                             <div class="cont_col_icon"></div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="cont_col cont_col_4">
                             <div class="cont_col_title">безналичная оплата</div>
                             <div class="cont_col_icon"></div>
                         </div>
                         <!-- <img src="img/block/pic4.png" alt="" /> -->
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="cont_col cont_col_5">
                             <div class="cont_col_title">обратная связь</div>
                             <div class="cont_col_icon"></div>
                         </div>
                         <!-- <img src="img/block/pic5.png" alt="" /> -->
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="cont_col cont_col_6">
                             <div class="cont_col_title">разделить стоимость поездки</div>
                             <div class="cont_col_icon"></div>
@@ -269,7 +276,7 @@
                 </div>
             </div>
         </section>
-        <section class="u_car">
+        <section class="u_car" id="auto_uber">
             <div class="container">
                 <div class="car_logo_bk"></div>
                 <div class="possibility w_color">возможности</div>
@@ -295,7 +302,7 @@
                 </div>
             </div>
         </section>
-        <section class="cons_reqs">
+        <section class="cons_reqs" id="reqs">
             <div class="container">
                 <div class="possibility">возможности</div>
                 <div class="app_header">условия и требования</div>
@@ -360,7 +367,7 @@
                 </div>
             </div>
         </section>
-        <section class="cities">
+        <section class="cities" id="cities">
             <div class="container">
                 <div class="possibility w_box">города</div>
                 <div class="app_header w_color">по всему миру</div>
@@ -368,7 +375,7 @@
                 <div class="cities_descr"><a href="#">посмотреть все города</a></div>
             </div>
         </section>
-        <footer>
+        <footer id="footer">
             <div class="footer_divider"></div>
             <div class="footer_wrapper">
                 <div class="footer_wrapper_social">
@@ -385,7 +392,7 @@
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>
-                <div class="footer_wrapper_links">
+                <div class="footer_wrapper_links" id="f_w_links">
                     <div class="footer_wrapper_links_main">
                         <a href="#">на главную</a>
                         <a href="#">города</a>
@@ -413,5 +420,6 @@
                 </div>
             </div>
         </footer>
+        <script src="js/burger_menu.js"></script>
     </body>
 </html>
